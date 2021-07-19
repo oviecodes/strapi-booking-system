@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rooms",
+  "info": {
+    "name": "rooms",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "roomNo": {
+      "type": "integer"
+    },
+    "occupied": {
+      "type": "boolean"
+    },
+    "beds": {
+      "type": "integer"
+    },
+    "guest": {
+      "model": "guests"
+    }
+  }
+}
